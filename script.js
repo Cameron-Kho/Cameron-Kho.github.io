@@ -11,18 +11,7 @@ function showSection(sectionId) {
   if (selectedSection) {
     selectedSection.style.display = 'block';
 
-    // Special logic for NFL Game: fill dropdowns
-    if (sectionId === "nfl-game") {
-      // Delay to ensure Brython is fully loaded
-      setTimeout(() => {
-        if (typeof window.fillDropdowns === "function") {
-          window.fillDropdowns();
-        } else {
-          console.error("fillDropdowns() is missing!");
-        }
-      }, 100); // 100ms delay
-    }
-  }
+
 }
 
 // Wait for the DOM to be loaded
