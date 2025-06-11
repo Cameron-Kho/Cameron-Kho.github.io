@@ -20,9 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
       const fortuneArea = document.getElementById("fortune-result");
       const randomNumber = Math.floor(Math.random() * 7) + 1;
 
-      surpriseBtn.addEventListener("click", function() {
-      console.log("Button clicked!");
-
 
       let resultHTML = `
         <h2>Read your fortune! 🎉</h2>
